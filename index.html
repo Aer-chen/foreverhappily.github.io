@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test1</title>
+	<script type="text/javascript">
+		function play(e){
+			if(e.keyCode){
+			   var keycode = e.keyCode
+			}else{
+				var keycode = e.which
+			}
+			var keys = document.getElementById("keys");
+			keys.innerHTML += keycode;
+		}
+		window.addEventListener("keypress",play);
+	</script>
+</head>
+
+<body>
+	<h1>Displaying Typed Characters</h1>
+	<p>text</p>
+	<p id="keys"></p>
+</body>
+</html>
